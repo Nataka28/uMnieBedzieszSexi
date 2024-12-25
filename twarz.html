@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styl7.css">
+        <title>Salon kosmetyczny</title>
+    </head>
+    <body>
+        <section id="kontener">
+            <section id="blok-lewy">
+                <section id="lewy-gora">
+                    <ol>
+                        <li><a href="twarz.html">Oczyszczenie twarzy</a>
+                            <ul>
+                                <li>Peeling</li>
+                                <li>Maska</li>
+                            </ul>
+                        </li>
+                        <li>Paznokcie żelowe</li>
+                        <li>Makijaż</li>
+                    </ol>
+                    <a href="index.html" style="padding: 25px;">Strona główna</a>
+                </section>
+                <section id="lewy-dol">
+                    <img src="obraz1.jpg" alt="Personel">
+                </section>
+            </section>
+            <section id="blok-prawy">
+                <section id="prawy-gora">
+                    <h1>Usługi kosmetyczne</h1>
+                </section>
+                <section id="prawy-dol">
+                    <h3>Kalkulator ceny wizyty</h3>
+                    <label for="peeling"><input type="checkbox" name="peeling" id="peeling" >Peeling</label><br>
+                    <label for="maska"><input type="checkbox" name="maska" id="maska" >Maska</label><br>
+                    <label for="paznokcie"><input type="checkbox" name="paznokcie" id="paznokcie" >Paznokcie żelowe</label><br>
+                    <label for="makijaz"><input type="checkbox" name="makijaz" id="makijaz" >Makijaż</label><br>
+                    <button onclick="oblicz()">Oblicz cenę</button>
+                    <p id="wynik"></p>
+                </section>
+            </section>
+        </section>
+        <section id="stopka"><p>Autor: Natalia</p></section>
+    <script>
+        function oblicz()
+        {
+            let cena=0;
+            if(document.getElementById("peeling").checked){
+                cena=cena+200;
+            }
+            if(document.getElementById("maska").checked){
+                cena=cena+250;
+            }
+            if(document.getElementById("paznokcie").checked){
+                cena=cena+190;
+            }
+            if(document.getElementById("makijaz").checked){
+                cena=cena+150;
+            }
+
+
+            document.getElementById("wynik").innerHTML='<p>Cena zabiegów: '+cena+'</p>';
+        }
+    </script>
+    </body>
+</html>

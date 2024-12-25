@@ -1,0 +1,57 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+#kontener{
+    display: flex;
+    width: 100%;
+}
+body{
+    font-family: cambria;
+}
+#blok-lewy{
+    background-color: #E1BEE7;
+    width: 25%;
+}
+#lewy-gora{
+    height: 400px;
+    
+}
+#lewy-dol{
+    height: 330px;
+}
+#blok-prawy{
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+}
+#prawy-gora{
+    display: flex;
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#prawy-dol{
+    color: indigo;
+    height: 580px;
+}
+#stopka{
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+img{
+    margin: 15px;
+    padding: 4px;
+}
+img:hover{
+    padding: 3px;
+    border: 1px dashed indigo;
+}
